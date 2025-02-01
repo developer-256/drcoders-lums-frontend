@@ -4,6 +4,7 @@ import React from "react";
 import AddToCart from "./AddToCart";
 
 const Product = ({
+  id,
   img,
   category,
   name,
@@ -11,6 +12,7 @@ const Product = ({
   slug,
   categorySlug,
 }: {
+  id: number;
   img: string | StaticImageData;
   category: string;
   name: string;
@@ -47,7 +49,7 @@ const Product = ({
         </div>
       </Link>
 
-      <AddToCart />
+      <AddToCart id={id} />
     </div>
   );
 };

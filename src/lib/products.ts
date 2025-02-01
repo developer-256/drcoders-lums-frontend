@@ -47,6 +47,7 @@ export const categories: categoriesType[] = [
 
 export const AllProducts = [
   {
+    id: 0,
     title: "Brown eggs",
     type: "dairy",
     description: "Raw organic brown eggs in a basket",
@@ -57,6 +58,7 @@ export const AllProducts = [
     rating: 4,
   },
   {
+    id: 1,
     title: "Sweet fresh stawberry",
     type: "fruit",
     description: "Sweet fresh stawberry on the wooden table",
@@ -67,6 +69,7 @@ export const AllProducts = [
     rating: 4,
   },
   {
+    id: 2,
     title: "Asparagus",
     type: "vegetable",
     description: "Asparagus with ham on the wooden table",
@@ -78,6 +81,7 @@ export const AllProducts = [
   },
   {
     title: "Green smoothie",
+    id: 3,
     type: "dairy",
     description:
       "Glass of green smoothie with quail egg's yolk, served with cocktail tube, green apple and baby spinach leaves over tin surface.",
@@ -88,6 +92,7 @@ export const AllProducts = [
     rating: 4,
   },
   {
+    id: 4,
     title: "Raw legums",
     type: "vegetable",
     description: "Raw legums on the wooden table",
@@ -99,6 +104,7 @@ export const AllProducts = [
   },
   {
     title: "Baking cake",
+    id: 5,
     type: "dairy",
     description:
       "Baking cake in rural kitchen - dough  recipe ingredients (eggs, flour, sugar) on vintage wooden table from above.",
@@ -109,6 +115,7 @@ export const AllProducts = [
     rating: 4,
   },
   {
+    id: 6,
     title: "Pesto with basil",
     type: "vegetable",
     description: "Italian traditional pesto with basil, chesse and oil",
@@ -120,6 +127,7 @@ export const AllProducts = [
   },
   {
     title: "Hazelnut in black ceramic bowl",
+    id: 7,
     type: "vegetable",
     description:
       "Hazelnut in black ceramic bowl on old wooden background. forest wealth. rustic style. selective focus",
@@ -130,6 +138,7 @@ export const AllProducts = [
     rating: 0,
   },
   {
+    id: 8,
     title: "Fresh stawberry",
     type: "fruit",
     description: "Sweet fresh stawberry on the wooden table",
@@ -140,6 +149,7 @@ export const AllProducts = [
     rating: 4,
   },
   {
+    id: 9,
     title: "Lemon and salt",
     type: "fruit",
     description: "Rosemary, lemon and salt on the table",
@@ -150,6 +160,7 @@ export const AllProducts = [
     rating: 5,
   },
   {
+    id: 10,
     title: "Homemade bread",
     type: "bakery",
     description: "Homemade bread",
@@ -160,6 +171,7 @@ export const AllProducts = [
     rating: 3,
   },
   {
+    id: 11,
     title: "Legums",
     type: "vegetable",
     description: "Cooked legums on the wooden table",
@@ -170,6 +182,7 @@ export const AllProducts = [
     rating: 0,
   },
   {
+    id: 12,
     title: "Fresh tomato",
     type: "vegetable",
     description: "Fresh tomato juice with basil",
@@ -181,6 +194,7 @@ export const AllProducts = [
   },
   {
     title: "Healthy breakfast",
+    id: 13,
     type: "fruit",
     description:
       "Healthy breakfast set. rice cereal or porridge with berries and honey over rustic wood background",
@@ -191,6 +205,7 @@ export const AllProducts = [
     rating: 2,
   },
   {
+    id: 14,
     title: "Green beans",
     type: "vegetable",
     description: "Raw organic green beans ready to eat",
@@ -202,6 +217,7 @@ export const AllProducts = [
   },
   {
     title: "Baked stuffed portabello mushrooms",
+    id: 15,
     type: "bakery",
     description:
       "Homemade baked stuffed portabello mushrooms with spinach and cheese",
@@ -212,6 +228,7 @@ export const AllProducts = [
     rating: 1,
   },
   {
+    id: 16,
     title: "Strawberry jelly",
     type: "fruit",
     description: "Homemade organic strawberry jelly in a jar",
@@ -222,6 +239,7 @@ export const AllProducts = [
     rating: 1,
   },
   {
+    id: 17,
     title: "Pears juice",
     type: "fruit",
     description: "Fresh pears juice on the wooden table",
@@ -232,6 +250,7 @@ export const AllProducts = [
     rating: 4,
   },
   {
+    id: 18,
     title: "Fresh pears",
     type: "fruit",
     description: "Sweet fresh pears on the wooden table",
@@ -243,6 +262,7 @@ export const AllProducts = [
   },
   {
     title: "Caprese salad",
+    id: 19,
     type: "vegetable",
     description:
       "Homemade healthy caprese salad with tomato mozzarella and basil",
@@ -254,6 +274,7 @@ export const AllProducts = [
   },
   {
     title: "Oranges",
+    id: 20,
     type: "fruit",
     description:
       "Orange popsicle ice cream bars made from fresh oranges.  a refreshing summer treat.",
@@ -264,6 +285,7 @@ export const AllProducts = [
     rating: 4,
   },
   {
+    id: 21,
     title: "Vegan food",
     type: "vegetable",
     description: "Concept of vegan food",
@@ -274,6 +296,7 @@ export const AllProducts = [
     rating: 4,
   },
   {
+    id: 22,
     title: "Breakfast with muesli",
     type: "dairy",
     description: "Concept of healthy breakfast with muesli",
@@ -284,6 +307,7 @@ export const AllProducts = [
     rating: 2,
   },
   {
+    id: 23,
     title: "Honey",
     type: "bakery",
     description: "Honey and honeycell on the table",
@@ -294,6 +318,7 @@ export const AllProducts = [
     rating: 2,
   },
   {
+    id: 24,
     title: "Breakfast with cottage",
     type: "fruit",
     description: "Healthy breakfast with cottage cheese and strawberry",
@@ -305,6 +330,7 @@ export const AllProducts = [
   },
   {
     title: "Strawberry smoothie",
+    id: 25,
     type: "fruit",
     description:
       "Glass of red strawberry smoothie with chia seeds, served with retro cocktail tube, fresh mint and strawberries over dark background",
@@ -315,6 +341,7 @@ export const AllProducts = [
     rating: 2,
   },
   {
+    id: 26,
     title: "Strawberry and mint",
     type: "fruit",
     description: "Homemade muesli with strawberry and mint",
@@ -325,6 +352,7 @@ export const AllProducts = [
     rating: 4,
   },
   {
+    id: 27,
     title: "Ricotta",
     type: "dairy",
     description: "Ricotta with berry and mint",
@@ -336,6 +364,7 @@ export const AllProducts = [
   },
   {
     title: "Cuban sandwiche",
+    id: 28,
     type: "bakery",
     description:
       "Homemade traditional cuban sandwiches with ham pork and cheese",
@@ -347,6 +376,7 @@ export const AllProducts = [
   },
   {
     title: "Granola",
+    id: 29,
     type: "dairy",
     description:
       "Glass jar with homemade granola and yogurt with nuts, raspberries and blackberries on wooden cutting board over white textile in day light",
@@ -358,6 +388,7 @@ export const AllProducts = [
   },
   {
     title: "Smoothie with chia seeds",
+    id: 30,
     type: "fruit",
     description:
       "Glass of red strawberry smoothie with chia seeds, served with retro cocktail tube, fresh mint and strawberries over wooden table",
@@ -368,6 +399,7 @@ export const AllProducts = [
     rating: 5,
   },
   {
+    id: 31,
     title: "Yogurt",
     type: "dairy",
     description: "Homemade yogurt with raspberry and mint",
@@ -378,6 +410,7 @@ export const AllProducts = [
     rating: 4,
   },
   {
+    id: 32,
     title: "Sandwich with salad",
     type: "vegetable",
     description: "Vegan sandwich with salad, tomato and radish",
@@ -388,6 +421,7 @@ export const AllProducts = [
     rating: 5,
   },
   {
+    id: 33,
     title: "Cherry",
     type: "fruit",
     description: "Cherry with sugar on old table",
@@ -398,6 +432,7 @@ export const AllProducts = [
     rating: 5,
   },
   {
+    id: 34,
     title: "Raw asparagus",
     type: "vegetable",
     description: "Raw fresh asparagus salad with cheese and dressing",
@@ -408,6 +443,7 @@ export const AllProducts = [
     rating: 4,
   },
   {
+    id: 35,
     title: "Corn",
     type: "vegetable",
     description: "Grilled corn on the cob with salt and butter",
@@ -418,6 +454,7 @@ export const AllProducts = [
     rating: 2,
   },
   {
+    id: 36,
     title: "Vegan",
     type: "vegan",
     description: "Concept of healthy vegan eating",
@@ -429,6 +466,7 @@ export const AllProducts = [
   },
   {
     title: "Fresh blueberries",
+    id: 37,
     type: "fruit",
     description:
       "Healthy breakfast. berry crumble with fresh blueberries, raspberries, strawberries, almond, walnuts, pecans, yogurt, and mint in ceramic plates over white wooden surface, top view",
@@ -440,6 +478,7 @@ export const AllProducts = [
   },
   {
     title: "Smashed avocado",
+    id: 38,
     type: "fruit",
     description:
       "Vegan sandwiches with smashed avocado, tomatoes and radish. top view",
@@ -451,6 +490,7 @@ export const AllProducts = [
   },
   {
     title: "Italian ciabatta",
+    id: 39,
     type: "bakery",
     description:
       "Italian ciabatta bread cut in slices on wooden chopping board with herbs, garlic and olives over dark grunge backdrop, top view",
@@ -462,6 +502,7 @@ export const AllProducts = [
   },
   {
     title: "Rustic breakfast",
+    id: 40,
     type: "dairy",
     description:
       "Rustic healthy breakfast set. cooked buckwheat groats with milk and honey on dark grunge backdrop. top view, copy space",
@@ -473,6 +514,7 @@ export const AllProducts = [
   },
   {
     title: "Sliced lemons",
+    id: 41,
     type: "fruit",
     description:
       "Heap of whole and sliced lemons and limes with mint in vintage metal grid box over old wooden table with turquoise wooden background. dark rustic style.",
@@ -483,6 +525,7 @@ export const AllProducts = [
     rating: 2,
   },
   {
+    id: 42,
     title: "Plums",
     type: "fruit",
     description: "Yellow and red sweet plums",
@@ -493,6 +536,7 @@ export const AllProducts = [
     rating: 1,
   },
   {
+    id: 43,
     title: "French fries",
     type: "bakery",
     description: "Homemade oven baked french fries with ketchup",
@@ -504,6 +548,7 @@ export const AllProducts = [
   },
   {
     title: "Strawberries",
+    id: 44,
     type: "fruit",
     description:
       "Healthy breakfast set. rice cereal or porridge with fresh strawberry, apricots, almond and honey over white rustic wood backdrop, top view, \u0000",
@@ -515,6 +560,7 @@ export const AllProducts = [
   },
   {
     title: "Ground beef meat burger",
+    id: 45,
     type: "meat",
     description:
       "Raw ground beef meat burger steak cutlets with seasoning on vintage wooden boards, black background",
@@ -525,6 +571,7 @@ export const AllProducts = [
     rating: 5,
   },
   {
+    id: 46,
     title: "Tomatoes",
     type: "fruit",
     description: "Organic tomatoes made with love",
@@ -535,6 +582,7 @@ export const AllProducts = [
     rating: 4,
   },
   {
+    id: 47,
     title: "Basil",
     type: "vegetable",
     description: "Concept of vegan food with basil",
@@ -545,6 +593,7 @@ export const AllProducts = [
     rating: 4,
   },
   {
+    id: 48,
     title: "Fruits bouquet",
     type: "fruit",
     description: "Abstract citrus fruits bouquet on blue background",
@@ -556,6 +605,7 @@ export const AllProducts = [
   },
   {
     title: "Peaches on branch",
+    id: 49,
     type: "fruit",
     description:
       "Peaches on branch with leaves and glasses with peach juice and limonade with ice cubes in aluminum tray over old metal table. dark rustic style. top view.",
