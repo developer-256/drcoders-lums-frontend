@@ -17,7 +17,7 @@ export interface categoriesType {
 }
 
 export const categories: categoriesType[] = [
-  { name: "All", value: "all", image: ImageAssets.prodImgs.Img0 },
+  { name: "All", value: "all", image: ImageAssets.prodImgs.AllCategories },
   {
     name: "Dairy Products",
     value: "dairy",

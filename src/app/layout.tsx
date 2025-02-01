@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { getSession } from "@/auth";
-import { Poppins } from "next/font/google";
+import { Poppins, Quicksand } from "next/font/google";
 import Providers from "./providers";
 import { cn } from "@/lib/utils";
 import ResponsiveTester from "@/lib/ResponsiveTester";
@@ -13,6 +13,13 @@ const poppins = Poppins({
   variable: "--font-poppins",
   // preload: true,
   weight: ["300", "400", "500", "600", "700", "800"],
+});
+
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  display: "swap",
+  // preload: true,
+  variable: "--font-quicksand",
 });
 
 export const metadata: Metadata = {
@@ -30,7 +37,13 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className={cn("text-foreground antialiased", poppins.variable)}>
+      <body
+        className={cn(
+          "text-foreground antialiased",
+          poppins.variable,
+          quicksand.variable,
+        )}
+      >
         <Providers session={session}>{children}</Providers>
         {/* <ResponsiveTester /> */}
 
