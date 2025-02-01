@@ -19,3 +19,13 @@ export const useSigninStore = create<SigninStore>()(
 );
 
 //   setRoleWhileSignin: (role) => set((state) => ({ roleWhileSignin: role })),
+
+type filterStore = {
+  filter: string;
+  setFilter: (filter: string) => void;
+};
+
+export const useFilterStore = create<filterStore>()((set) => ({
+  filter: "all",
+  setFilter: (filter) => set({ filter: filter }),
+}));

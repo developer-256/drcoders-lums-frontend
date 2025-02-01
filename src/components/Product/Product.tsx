@@ -2,6 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
 import AddToCart from "./AddToCart";
+import { useFilterStore } from "@/app/Stores/UtilsStore";
 
 const Product = ({
   id,
@@ -33,8 +34,8 @@ const Product = ({
           placeholder="blur"
         />
       </div>
-      <Link
-        href={`/product-detail/${categorySlug}/${slug}`}
+      <div
+        // href={`/product-detail/${categorySlug}/${slug}`}
         className="flex flex-col gap-1 px-4 pb-4 pt-4"
       >
         <p className="text-sm text-[#777]">{category}</p>
@@ -47,7 +48,7 @@ const Product = ({
             Rs. {price}
           </h4>
         </div>
-      </Link>
+      </div>
 
       <AddToCart id={id} />
     </div>

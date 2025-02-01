@@ -94,7 +94,7 @@ export const AllProducts = [
   {
     id: 4,
     title: "Raw legums",
-    type: "vegetable",
+    type: "vegan",
     description: "Raw legums on the wooden table",
     filename: ImageAssets.prodImgs.Img4,
     height: 450,
@@ -128,7 +128,7 @@ export const AllProducts = [
   {
     title: "Hazelnut in black ceramic bowl",
     id: 7,
-    type: "vegetable",
+    type: "vegan",
     description:
       "Hazelnut in black ceramic bowl on old wooden background. forest wealth. rustic style. selective focus",
     filename: ImageAssets.prodImgs.Img7,
@@ -137,17 +137,7 @@ export const AllProducts = [
     price: 27.35,
     rating: 0,
   },
-  {
-    id: 8,
-    title: "Fresh stawberry",
-    type: "fruit",
-    description: "Sweet fresh stawberry on the wooden table",
-    filename: ImageAssets.prodImgs.Img8,
-    height: 600,
-    width: 399,
-    price: 28.59,
-    rating: 4,
-  },
+
   {
     id: 9,
     title: "Lemon and salt",
@@ -173,7 +163,7 @@ export const AllProducts = [
   {
     id: 11,
     title: "Legums",
-    type: "vegetable",
+    type: "vegan",
     description: "Cooked legums on the wooden table",
     filename: ImageAssets.prodImgs.Img11,
     height: 600,
@@ -318,6 +308,17 @@ export const AllProducts = [
     rating: 2,
   },
   {
+    id: 8,
+    title: "Fresh stawberry",
+    type: "fruit",
+    description: "Sweet fresh stawberry on the wooden table",
+    filename: ImageAssets.prodImgs.Img8,
+    height: 600,
+    width: 399,
+    price: 28.59,
+    rating: 4,
+  },
+  {
     id: 24,
     title: "Breakfast with cottage",
     type: "fruit",
@@ -434,7 +435,7 @@ export const AllProducts = [
   {
     id: 34,
     title: "Raw asparagus",
-    type: "vegetable",
+    type: "vegan",
     description: "Raw fresh asparagus salad with cheese and dressing",
     filename: ImageAssets.prodImgs.Img34,
     height: 600,

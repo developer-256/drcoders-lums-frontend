@@ -1,10 +1,14 @@
+"use client";
 import React from "react";
 import MaxContainer from "../MaxContainer";
 import Image from "next/image";
 import Link from "next/link";
 import { categories, categoriesType } from "@/lib/products";
+import { useFilterStore } from "@/app/Stores/UtilsStore";
 
 const HomeCategories = () => {
+  const setFilter = useFilterStore((state) => state.setFilter);
+
   return (
     <MaxContainer className="mt-12 px-0 md:mt-14 md:px-0">
       <h1 className="font-quicksand px-2 text-3xl font-semibold md:px-10">
@@ -14,12 +18,10 @@ const HomeCategories = () => {
       <section className="mt-5 flex flex-wrap justify-around gap-y-2 md:mt-8 md:justify-center md:gap-5">
         {categories.map((Item: categoriesType, i: number) => {
           return (
-            <Link
-              href={`/shop?${new URLSearchParams({
-                category: Item.value,
-              })}`}
+            <div
+              onClick={() => setFilter(Item.value)}
               key={i}
-              className="group/card flex flex-col items-center rounded-lg border bg-white p-1.5 transition-transform duration-200 hover:scale-105 hover:border-primary"
+              className="group/card flex cursor-pointer flex-col items-center rounded-lg border bg-white p-1.5 transition-transform duration-200 hover:scale-105 hover:border-primary"
             >
               <div className="h-28 w-28 overflow-hidden rounded-md border duration-200 group-hover/card:border-primary md:h-40 md:w-40">
                 <Image
@@ -31,7 +33,7 @@ const HomeCategories = () => {
               <h2 className="transition-text mb-1 mt-2 duration-200 group-hover/card:text-primary">
                 {Item.name}
               </h2>
-            </Link>
+            </div>
           );
         })}
       </section>
