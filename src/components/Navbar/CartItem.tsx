@@ -23,24 +23,21 @@ const CartItem = ({ id, count }: { id: number; count: number }) => {
         </div>
 
         <div className="w-full">
-          <h3 className="text-slate-800">{Product[0].title}</h3>
+          <h3 className="text-start text-sm leading-4 text-slate-800 md:leading-[1.25rem]">
+            {Product[0].title}
+          </h3>
 
-          <div className="flex items-center justify-between gap-4">
-            <p>Price: {Product[0].price}</p>
+          <div className="flex flex-col justify-between text-start md:flex-row md:items-center md:gap-4">
+            <p className="mt-1 md:mt-0">Price: {Product[0].price}</p>
 
             <div className="mt-1.5 flex items-end">
               <Minus
                 className="flex h-7 w-7 cursor-pointer items-center justify-center rounded-l-sm bg-white p-1.5"
                 onClick={() => dec(id)}
               />
-              <Input
-                value={count}
-                className={cn(
-                  "h-7 max-w-5 rounded-none border-none bg-white px-0 text-center shadow-none !outline-none !ring-0",
-                  "[appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none",
-                )}
-                type="number"
-              />
+              <div className="flex h-7 w-5 items-center justify-center bg-white">
+                {count}
+              </div>
               <Plus
                 className="flex h-7 w-7 cursor-pointer items-center justify-center rounded-r-sm bg-white p-1.5"
                 onClick={() => inc(id)}
