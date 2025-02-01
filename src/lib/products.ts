@@ -9,6 +9,42 @@ export const Categories = [
   "meat",
 ];
 
+import { type StaticImageData } from "next/image";
+export interface categoriesType {
+  name: string;
+  value: string;
+  image: string | StaticImageData;
+}
+
+export const categories: categoriesType[] = [
+  { name: "All", value: "all", image: ImageAssets.prodImgs.Img0 },
+  {
+    name: "Dairy Products",
+    value: "dairy",
+    image: ImageAssets.prodImgs.Img0,
+  },
+  {
+    name: "Fruits",
+    value: "fruit",
+    image: ImageAssets.prodImgs.Img1,
+  },
+  {
+    name: "Vegetables",
+    value: "vegetable",
+    image: ImageAssets.prodImgs.Img2,
+  },
+  {
+    name: "Vegan Products",
+    value: "vegan",
+    image: ImageAssets.prodImgs.Img21,
+  },
+  {
+    name: "Meat Products",
+    value: "meat",
+    image: ImageAssets.prodImgs.Img45,
+  },
+];
+
 export const AllProducts = [
   {
     title: "Brown eggs",

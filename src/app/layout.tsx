@@ -16,8 +16,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Tokenty",
-  description: "Create Your Smart Contracts With Tokenty",
+  title: "Buy for Me",
+  description: "Anything Anywhere All At Once",
   icons: [{ rel: "icon", url: "/icon.png" }],
 };
 
