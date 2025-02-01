@@ -13,9 +13,10 @@ import {
 } from "@/components/ui/sheet";
 import { useModal } from "@/app/Stores/ModalStore";
 import NavSearch from "../NavSearch";
+import NavCart from "../NavCart";
 
 const MobileNavbar = () => {
-  const open = useModal((state) => state.activeModal === "mobileSiderbar");
+  const open = useModal((state) => state.activeModal === "cart");
   const setOpen = useModal((state) => state.setCartActive);
 
   return (
@@ -26,12 +27,17 @@ const MobileNavbar = () => {
         <div className="flex items-center gap-4">
           {/* <NavUserIcon /> */}
           <UserCircle size={25} className="text-primary" />
-          <ShoppingBag size={24} className="text-primary" />
+          <ShoppingBag
+            size={24}
+            className="text-primary"
+            onClick={() => setOpen(!open)}
+          />
+          {/* <NavCart /> */}
 
-          <Sheet open={open} onOpenChange={setOpen}>
-            <SheetTrigger>
-              <Menu size={26} className="text-primary" />
-            </SheetTrigger>
+          {/* <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger> */}
+          <Menu size={26} className="text-primary" />
+          {/* </SheetTrigger>
 
             <SheetContent>
               <SheetHeader>
@@ -42,7 +48,7 @@ const MobileNavbar = () => {
                 </SheetDescription>
               </SheetHeader>
             </SheetContent>
-          </Sheet>
+          </Sheet> */}
         </div>
       </div>
 
